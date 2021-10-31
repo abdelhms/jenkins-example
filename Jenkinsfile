@@ -18,9 +18,9 @@ pipeline {
             steps {
                 nexusArtifactUploader artifacts: [
                     [
-                        artifactId: 'jenkins-example', 
+                     artifactId: 'jenkins-example', 
                      classifier: '', 
-                     file: '/docker/jenkins_cont/workspace/demo/target/jenkins-example.1.0-SNAPSHOT.jar', 
+                     file: 'target/jenkins-example-1.0-SNAPSHOT.jar', 
                      type: 'jar'
                     ]
                 ], 
