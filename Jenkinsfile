@@ -1,14 +1,16 @@
 pipeline {
     agent any
+    tools {
+        maven 'maven3_8_3'
+    }
 
     stages {
         stage ('Compile Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_8_3') {
+                
                     sh 'mvn clean package'
                 }
-            }
         }
         
         stage ('Upload to nexus') {
