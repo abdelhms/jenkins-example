@@ -20,7 +20,8 @@ pipeline {
                     [
                         artifactId: 'jenkins-example', 
                      classifier: '', 
-                     file: '/var/jenkins_home/workspace/demo/target/jenkins-example.1.0-SNAPSHOT.war', type: 'war'
+                     file: '/docker/jenkins_cont/workspace/demo/target/jenkins-example.1.0-SNAPSHOT.war', 
+                     type: 'war'
                     ]
                 ], 
                     credentialsId: 'nexus-credentiels', 
