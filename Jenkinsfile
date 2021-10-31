@@ -18,9 +18,9 @@ pipeline {
             steps {
                 nexusArtifactUploader artifacts: [
                     [
-                        artifactId: 'simple-app', 
+                        artifactId: 'jenkins-example', 
                      classifier: '', 
-                     file: 'target/simple-app.war', type: 'war'
+                     file: 'target/jenkins-example.1.0-SNAPSHOT.war', type: 'war'
                     ]
                 ], 
                     credentialsId: 'nexus-credentiels', 
